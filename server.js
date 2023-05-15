@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express"); // importing express module
 const path = require("path");
 const fs = require("fs");
@@ -10,7 +11,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/contact-dance');
 
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 
-const port = 80;
+const port = process.env.PORT || 80;
 
 // DEFINE MONGOOSE SCHEMA
 var contactSchema = new mongoose.Schema({
