@@ -1,0 +1,147 @@
+
+*{
+    margin :0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
+
+#logo{
+    display: flex;
+    color:white;
+    align-items: center;
+    margin: 0px 14px;
+    font-size: 14px;
+    margin-right: 100px;
+}
+
+#logo img{
+    height: 40px;
+    filter: invert(1);
+
+}
+#navbar{
+    background:black;
+    padding :13px 30px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#navbar li{
+
+    list-style: none;
+}
+
+#navbar li a{
+    color:white;
+    text-decoration: none;
+    padding : 5px 10px;
+}
+#navbar li a:hover{
+    color: pink;
+}
+#introsection{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: center / cover no-repeat url("/static/dancepic.jpg");
+    height : 500px;
+    background-color: pink;
+}
+
+#introsection div.small{
+    font-size:25px;
+}
+#missionsection {
+    color: white;
+    height: 350px;
+    background-color: black;
+    padding:4px 4px 4px 4px;
+}
+
+#missionsection div#container{
+    display:grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3,2fr);
+    height: 250px;
+}
+#missionsection h2{
+    text-align: center;
+    padding:20px;
+}
+#missionsection h3{
+    text-align:center;
+    padding:5px;
+
+}
+#missionsection div.card{
+    border:2px solid white;
+    border-radius:30px;
+    margin:4px;
+    padding:2px 2px 2px 2px;
+    background: black;
+
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img img{
+    height: inherit;
+    padding: 0 1px;
+    margin: 5px 1px;
+    border-radius: 500px;
+    filter: invert(1);
+}
+
+.card-container{
+     padding : 0 10px;
+}
+.card-container p{
+    margin-right: 20px;
+    font-size: 20px;
+}
+#sponsorsection{
+    height: 300px;
+    background: rgb(44, 3, 12);
+}
+#sponsorsection h2{
+    color: white;
+    text-align : center;
+    padding-top: 20px;
+}
+
+#sponsors{
+    height: 200px;
+    max-width: 1000px;
+    margin:auto;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(6,2fr);
+}
+.spimage{
+    height: 100px;
+    margin:20px;
+}
+#sponsors img{
+    filter: invert(1);
+}
+#footer{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    height:30px;
+    background: rgb(8, 8, 8);
+}
+
